@@ -8,8 +8,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface CardService {
-    public Optional createCard();
+    public Response createCard(CardModel cardModel);
     public Optional updateCard();
-    public Optional deleteCard();
+    public Response deleteCard(Long id);
     public List<CardModel> getAllCards();
+    public CardModel getCardById(Long id);
 }
