@@ -10,6 +10,7 @@ import org.acme.model.CardModel;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.awt.*;
 
 @Entity
 @Getter
@@ -21,5 +22,7 @@ public class Card extends PanacheEntityBase {
     @Id
     private Long id;
     private Long customer_id;
+    private String card_name;
+    private String description;
 
 }

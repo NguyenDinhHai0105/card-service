@@ -43,4 +43,10 @@ public class CardResource {
         return cardService.deleteCard(id);
     }
 
+    @PUT
+    @Transactional
+    public Response updateCard(CardModel cardModel) {
+        return cardService.updateCard(cardModel);
+    }
+
 }

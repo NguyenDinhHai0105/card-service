@@ -3,7 +3,9 @@
 -- insert into myentity (id, field) values(nextval('hibernate_sequence'), 'field-1');
 -- insert into myentity (id, field) values(nextval('hibernate_sequence'), 'field-2');
 -- insert into myentity (id, field) values(nextval('hibernate_sequence'), 'field-3');
- insert into card (id, customer_id) values ('1', '1');
- insert into card (id, customer_id) values ('2', '1');
- insert into card (id, customer_id) values ('3', '1');
- insert into card (id, customer_id) values ('4', '1');
+
+
+insert into card (id, customer_id, card_name, description) values (1, 1, 'card name', 'card description');
+insert into card (id, customer_id, card_name, description) values (2, 1, 'card name', 'card description');
+insert into card (id, customer_id, card_name, description) values (3, 1, 'card name', 'card description');
+insert into card (id, customer_id, card_name, description) values (4, 1, 'card name', 'card description');

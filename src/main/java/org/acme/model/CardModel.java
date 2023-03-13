@@ -13,9 +13,11 @@ import org.acme.entity.Card;
 public class CardModel {
     private Long id;
     private Long customer_id;
+    private String card_name;
+    private String description;
 
     public CardModel convertCardToCardModel(Card card) {
-        return new CardModel(card.getId(), card.getCustomer_id());
+        return new CardModel(card.getId(), card.getCustomer_id(), card.getCard_name(), card.getDescription());
     }
 
 }

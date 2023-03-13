@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface CardService {
     public Response createCard(CardModel cardModel);
-    public Optional updateCard();
+    public Response updateCard(CardModel cardModel);
     public Response deleteCard(Long id);
     public List<CardModel> getAllCards();
     public CardModel getCardById(Long id);
